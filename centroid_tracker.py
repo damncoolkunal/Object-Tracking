@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
 
-# In[19]:
 
 
 from scipy.spatial import distance as dist
@@ -18,14 +15,14 @@ class CentoidTracker():
         
         self.maxDisappeared =maxDisappeared
         
-    #Add new participants    
+   
 
     def register(self ,centroid):
         self.objects[self.nextObjectID] = centroid
         self.disappeared[self.nextObjectID] =0
         self.nextObjectID +=1
         
-     #delete participants   
+     
     
     def deregister(self , objectID):
         del self.objects[objectID]
@@ -126,7 +123,7 @@ class CentoidTracker():
 
 
 
-# In[ ]:
+
 
 
 
